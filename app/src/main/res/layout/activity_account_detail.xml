@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAccountHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titular: [nombre_usuario]" />
+
+    <TextView
+        android:id="@+id/tvAccountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de cuenta: [numero_cuenta]"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvTotalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo total: $[cantidad]"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese monto"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnAddMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir dinero"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnWithdrawMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retirar dinero"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
