@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
 
             if (isValidEmail(email) && isValidPassword(password)) {
                 if (checkCredentials(email, password)) {
-                    Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                } else {
+                    val intent = Intent(this, PersonalMenuActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }else {
                     Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
                 }
             } else {
